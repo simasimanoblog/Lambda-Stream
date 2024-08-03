@@ -20,8 +20,8 @@ public class Chapter10 {
 		long backlogCount = list.stream().filter(task -> !task.isDone()).count();
 
 		// 未完了のタスクだけをフィルタリングして表示
-		System.out.println("\n未完了のタスクの個数は「" + backlogCount + "」");
-		System.out.println("\n【未完了のタスクを昇順に並び替えて一覧表示】");
+		System.out.println("未完了のタスクの個数は" + backlogCount);
+		System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
 		
 		// ラムダ式を使用して未完了タスクをフィルタリング
 		// .filter：未完了タスクをフィルタリング
